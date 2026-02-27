@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nutrition Label Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Automated Nutrition Label Generator</h1>
+
+    <form method="POST">
+        <label>Recipe Name:</label>
+        <input type="text" name="recipe_name" required>
+
+        <label>Enter Recipe (e.g., 200g rice, 100g milk):</label>
+        <input type="text" name="recipe" required>
+
+        <button type="submit">Generate Label</button>
+    </form>
+</div>
+
+</body>
+</html>

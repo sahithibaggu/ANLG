@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nutrition Label</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="label">
+    <h2>{{ recipe_name }}</h2>
+    <h1>NUTRITION INFORMATION</h1>
+    <hr>
+
+    <div class="row bold">
+        <span>Energy</span>
+        <span>{{ "%.1f"|format(totals.calories) }} kcal</span>
+    </div>
+
+    <div class="row">
+        <span>Protein</span>
+        <span>{{ "%.1f"|format(totals.protein) }} g</span>
+    </div>
+
+    <div class="row">
+        <span>Fat</span>
+        <span>{{ "%.1f"|format(totals.fat) }} g</span>
+    </div>
+
+    <div class="row">
+        <span>Carbohydrates</span>
+        <span>{{ "%.1f"|format(totals.carbs) }} g</span>
+    </div>
+
+    <div class="row">
+        <span>Sugar</span>
+        <span>{{ "%.1f"|format(totals.sugar) }} g</span>
+    </div>
+
+    <div class="row">
+        <span>Sodium</span>
+        <span>{{ "%.1f"|format(totals.sodium) }} mg</span>
+    </div>
+
+    <hr>
+    <p class="footer">Complies with FSSAI Nutritional Labelling Guidelines</p>
+
+    <a href="/">Generate Another</a>
+</div>
+
+</body>
+</html>

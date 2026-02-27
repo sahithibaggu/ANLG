@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    text-align: center;
+}
+
+.container {
+    margin-top: 80px;
+}
+
+input {
+    width: 300px;
+    padding: 8px;
+    margin: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.label {
+    width: 400px;
+    margin: 40px auto;
+    background: white;
+    border: 4px solid black;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.footer {
+    font-size: 14px;
+}
